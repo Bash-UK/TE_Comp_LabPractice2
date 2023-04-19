@@ -1,0 +1,23 @@
+{
+	"Neamt":["Iasi"],
+	"Iasi":["Neamt","Vaslui"],
+	"Vaslui":["Iasi","Urziceni"],
+	"Urziceni":["Vaslui","Bucharest","Hirasova"],
+	"Hirasova":["Urziceni","Eforie"],
+	"Eforie":["Hirasova"],
+	"Bucharest":["Urziceni","Giurgiu","Fagaras","Pitesti"],
+	"Giurgiu":["Bucharest"],
+	"Fagaras":["Bucharest","Sibiu"],
+	"Pitesti":["Bucharest","Rimnicu Vilcea","Craiova"],
+	"Rimnicu Vilcea":["Pitesti","Craiova","Sibiu"],
+	"Craiova":["Pitesti","Rimnicu Vilcea","Drobeta"],
+	"Sibiu":["Fagaras","Rimnicu Vilcea","Oradea","Arad"],
+	"Oradea":["Sibiu","Zerind"],
+	"Zerind":["Oradea","Arad"],
+	"Arad":["Timisoara","Zerind","Sibiu"],
+	"Timisoara":["Arad","Lugoj"],
+	"Lugoj":["Timisoara","Mehadia"],
+	"Mehadia":["Lugoj","Drobeta"],
+	"Drobeta":["Mehadia","Craiova"]
+}
+
