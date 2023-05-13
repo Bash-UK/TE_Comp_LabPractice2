@@ -21,6 +21,7 @@ responses = {
 # Main chatbot loop
 while True:
     # Get user input
+    print("Warning: This is not ChatGPT, its just a simple static chat bot, So use it wisely!!!")
     user_input = input("User: ")
 
     # Convert user input to lowercase for easier matching
