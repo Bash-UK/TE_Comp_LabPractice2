@@ -4,13 +4,13 @@ class NQueensProblem:
         posDiag =set()      # for positive diag (down-up)
         negDiag = set()     # for negative diag (up-down)
         res =[]
-        count =0            # count for each solution attempt
+                 
 
         board = [["."]*n for i in range(n)]         # board init
         print(board)
          # Start search of solution in top-bottom and left-right approach from 0th row and increament subsequently
-        def backtrack(r,count):
-            count= count+1
+        def backtrack(r):
+            
             if r==n:
                 copyBoard = ["".join(row) for row in board] # if board successfully reaches nth row solution found 
                                                             # then join all rows for making it as single solution
@@ -43,7 +43,7 @@ class NQueensProblem:
                 print(negDiag)
               
               # repeat for next row upto n-1
-                backtrack(r+1,count)    # Go check for next row with 
+                backtrack(r+1)    # Go check for next row with 
 
             # if there is no possible unattacked position in next row 
             # then drop this incomplete solution 
@@ -58,7 +58,7 @@ class NQueensProblem:
 
 
 
-        backtrack(0,count) # start the search from 0th row
+        backtrack(0) # start the search from 0th row
         return res  # return the set of all possible solution for problem
 
 
